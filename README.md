@@ -1,19 +1,57 @@
-# :earth_americas: GDP dashboard template
+🧠 TIG Welding Heat Input Calculator & Predictor
+📖 Overview
 
-A simple Streamlit app showing the GDP of different countries in the world.
+This Streamlit application allows users to calculate the heat input during a TIG (Tungsten Inert Gas) welding process and use a trained machine learning model to predict weld characteristics without requiring manual heat input entry.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gdp-dashboard-template.streamlit.app/)
+Users can input welding parameters such as current, voltage, travel speed, and material type, and the app:
 
-### How to run it on your own machine
+Automatically computes the heat input (J/mm),
 
-1. Install the requirements
+Preprocesses the input values for model compatibility,
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+Predicts the desired welding output (like bead width, hardness, etc.), and
 
-2. Run the app
+Displays both the calculated heat input and the prediction result interactively.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+⚙️ Features
+
+✅ Automatic Heat Input Calculation using the formula:
+
+Heat Input (J/mm)
+=
+𝑉
+×
+𝐼
+𝑆
+×
+60
+Heat Input (J/mm)=
+S
+V×I
+	​
+
+×60
+
+where:
+
+𝑉
+V = Voltage (Volts)
+
+𝐼
+I = Current (Amperes)
+
+𝑆
+S = Travel Speed (mm/s)
+
+✅ Streamlit-based Interactive UI for easy data entry.
+✅ Model Integration using a pre-trained RandomForestRegressor (or any regression model).
+✅ Error Handling for missing or invalid inputs.
+✅ Instant Predictions for real-time welding insights.
+
+🧩 Tech Stack
+Component	Technology
+Frontend/UI	Streamlit
+Backend	Python
+ML Model	scikit-learn
+Data Handling	pandas, numpy
+Visualization	matplotlib / Streamlit components
