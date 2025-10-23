@@ -6,7 +6,7 @@ import pandas as pd
 # ------------------------------
 # Load trained model pipeline
 # ------------------------------
-model = joblib.load("tig_random_forest_pipeline.pkl")
+model = joblib.load("tig_random_forest_model.pkl")
 
 st.set_page_config(page_title="TIG Welding Hardness Predictor", page_icon="⚙️")
 st.title("TIG Welding Hardness & Heat Predictor")
