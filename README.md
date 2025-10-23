@@ -15,9 +15,7 @@ Users can input welding parameters such as **current**, **voltage**, **travel sp
 ## ⚙️ Features
 ✅ **Automatic Heat Input Calculation** using the formula:  
 
-\[
-\text{Heat Input (J/mm)} = \frac{V \times I}{S} \times 60
-\]
+**Heat Input (J/mm) = (Voltage × Current × 60) ÷ Travel Speed**
 
 where:  
 - **V** = Voltage (Volts)  
