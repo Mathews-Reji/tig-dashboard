@@ -1,57 +1,50 @@
-🧠 TIG Welding Heat Input Calculator & Predictor
-📖 Overview
+# 🧠 TIG Welding Heat Input Calculator & Predictor
 
-This Streamlit application allows users to calculate the heat input during a TIG (Tungsten Inert Gas) welding process and use a trained machine learning model to predict weld characteristics without requiring manual heat input entry.
+## 📖 Overview
+This Streamlit application allows users to **calculate the heat input** during a TIG (Tungsten Inert Gas) welding process and use a trained **machine learning model** to **predict weld characteristics** — without requiring manual heat input entry.
 
-Users can input welding parameters such as current, voltage, travel speed, and material type, and the app:
+Users can input welding parameters such as **current**, **voltage**, **travel speed**, and **material type**, and the app:
 
-Automatically computes the heat input (J/mm),
+- 🔹 Automatically computes the **heat input (J/mm)**  
+- 🔹 Preprocesses the input values for model compatibility  
+- 🔹 Predicts the desired welding output (e.g., bead width, hardness, etc.)  
+- 🔹 Displays both the **calculated heat input** and the **prediction result** interactively  
 
-Preprocesses the input values for model compatibility,
+---
 
-Predicts the desired welding output (like bead width, hardness, etc.), and
+## ⚙️ Features
+✅ **Automatic Heat Input Calculation** using the formula:  
 
-Displays both the calculated heat input and the prediction result interactively.
+\[
+\text{Heat Input (J/mm)} = \frac{V \times I}{S} \times 60
+\]
 
-⚙️ Features
+where:  
+- **V** = Voltage (Volts)  
+- **I** = Current (Amperes)  
+- **S** = Travel Speed (mm/s)
 
-✅ Automatic Heat Input Calculation using the formula:
+✅ **Streamlit-based Interactive UI** for easy data entry  
+✅ **Model Integration** using a pre-trained `RandomForestRegressor` (or any regression model)  
+✅ **Error Handling** for missing or invalid inputs  
+✅ **Instant Predictions** for real-time welding insights  
 
-Heat Input (J/mm)
-=
-𝑉
-×
-𝐼
-𝑆
-×
-60
-Heat Input (J/mm)=
-S
-V×I
-	​
+---
 
-×60
+## 🧩 Tech Stack
 
-where:
+| Component       | Technology          |
+|-----------------|--------------------|
+| Frontend/UI     | Streamlit          |
+| Backend         | Python             |
+| ML Model        | scikit-learn       |
+| Data Handling   | pandas, numpy      |
+| Visualization   | matplotlib / Streamlit components |
 
-𝑉
-V = Voltage (Volts)
+---
 
-𝐼
-I = Current (Amperes)
-
-𝑆
-S = Travel Speed (mm/s)
-
-✅ Streamlit-based Interactive UI for easy data entry.
-✅ Model Integration using a pre-trained RandomForestRegressor (or any regression model).
-✅ Error Handling for missing or invalid inputs.
-✅ Instant Predictions for real-time welding insights.
-
-🧩 Tech Stack
-Component	Technology
-Frontend/UI	Streamlit
-Backend	Python
-ML Model	scikit-learn
-Data Handling	pandas, numpy
-Visualization	matplotlib / Streamlit components
+## Authors
+1.Aswin E J
+2.Mohamed Aslam K A
+3.Mathews Reji
+4.Naveen S Lal
