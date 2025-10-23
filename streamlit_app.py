@@ -34,8 +34,9 @@ col1, col2 = st.columns(2)
 
 with col1:
     current = st.number_input("Current (A)", min_value=10.0, max_value=300.0, value=100.0)
-    voltage = st.number_input("Voltage (V)", min_value=5.0, max_value=50.0, value=98.0)
+    voltage = st.number_input("Voltage (V)", min_value=5.0, max_value=150.0, value=98.0)  # increased max to 150
     travel_speed = st.number_input("Travel Speed (mm/s)", min_value=0.1, max_value=20.0, value=2.0)
+
 
 with col2:
     bead_width = st.number_input("Bead Width (mm)", min_value=0.5, max_value=20.0, value=6.0)
