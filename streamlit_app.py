@@ -86,6 +86,6 @@ if st.button("🔍 Predict Hardness"):
 # ------------------------------
 st.markdown("""
 ---
-🔬 Developed by **Mathews Reji**  
+🔬 Developed by **Aswin E J, Mohamed Aslam K A, Mathews Reji & Naveen S Lal**  
 Built using **Streamlit + Scikit-Learn**
 """)
