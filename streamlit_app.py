@@ -33,13 +33,13 @@ st.subheader("🔧 Enter Welding Parameters")
 col1, col2 = st.columns(2)
 
 with col1:
-    current = st.number_input("Current (A)", min_value=10.0, max_value=300.0, value=100.0)
-    voltage = st.number_input("Voltage (V)", min_value=5.0, max_value=150.0, value=98.0)  # increased max to 150
-    travel_speed = st.number_input("Travel Speed (mm/s)", min_value=0.1, max_value=20.0, value=2.0)
+    current = st.number_input("Current (A)", min_value=98.0, max_value=102.0, value=100.0)
+    voltage = st.number_input("Voltage (V)", min_value=98.0, max_value=100.0, value=98.0)  # increased max to 150
+    travel_speed = st.number_input("Travel Speed (mm/s)", min_value=1.0, max_value=3.0, value=2.0)
 
 
 with col2:
-    bead_width = st.number_input("Bead Width (mm)", min_value=0.5, max_value=20.0, value=6.0)
+    bead_width = st.number_input("Bead Width (mm)", min_value=5.0, max_value=12.0, value=6.0)
     groove_depth = st.number_input("Groove Depth (mm)", min_value=0.0, max_value=5.0, value=0.0)
     weld_type = st.selectbox("TIG Weld Type", ["Normal", "Powdered"])
     tic_powdered = st.selectbox("TiC Powdered (Yes/No)", ["yes", "no"])
